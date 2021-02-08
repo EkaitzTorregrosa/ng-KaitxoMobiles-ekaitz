@@ -1,0 +1,12 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <img id="logo-kaitxo" src="../../assets/images/logo.png" class="rounded float-left" />
+    <h1 class="fs-8 text-center">¡¡Móviles al mejor precio!!</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div *ngFor="let product of products" class="col-12 col-md-6  col-lg-4">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+</div>

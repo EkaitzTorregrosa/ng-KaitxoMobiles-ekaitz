@@ -1,0 +1,14 @@
+<figure class="figure">
+  <div class="card">
+    <img src="{{product.image}}" class="card-img-top">
+    <figcaption class="figure-caption">
+      <div class="card-body">
+      <h5 class="card-title"
+      ><a [routerLink]="['/products', product.id]">{{product.title}}</a>
+        <span>{{product.price | currency}}</span>
+      </h5>
+      <p class="card-text">{{product.shortDescription}}</p>
+    </div>
+    </figcaption>
+  </div>
+</figure>
